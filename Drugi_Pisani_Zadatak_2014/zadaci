@@ -1,0 +1,10 @@
+1. Na ulazu su dati brojevi, N, K; I matrica NxK. i tri polja su zadata, a1,b1, a2,b2 i a3,b3
+Ako se krece od vrha matrice od polja 1,1-n,k dole i desno. Na koliko se nacina moze stici a da se obidju sva tri polja.
+
+2. Drzava ima N gradova. I ima K puteva izmedju njih u obliku (x, y) [postoji put x-y]. Odredi broj parova gradova preko kojih se stize sa tacno 2 
+presedanja
+
+3. Isto samo sto je dato rastojanje, odrediti najkrace rastojanje izmedju neka dva grada (koja su data). Rekonstruisati put.
+
+
+
