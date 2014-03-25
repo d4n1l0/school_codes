@@ -1,0 +1,48 @@
+#include <cstdio>
+#include <cstdlib>
+
+int min(int a, int b){return a<b?a:b;}
+
+int main()
+{
+    int l,r,Ql, Rr;
+    
+    scanf("%d %d %d %d", &l, &r, &Ql, &Qr);
+
+    int w[10001];
+
+    for (int i = 1; i <= n; i++) scanf("%d", &w[i]);
+
+    int sol;
+
+    
+    sol = min ( w[i]*l + Ql*(n-1), w[i]*r + Qr*(n-1) );
+    
+
+    for (int i = 1; i <= n-1; i++) 
+    {
+        int t=0;
+
+        int cl, cr;
+
+        cl = cr = 0;
+
+        for (int j = 1; j<=i; j++) {t+=w[i]*l; cl++;}
+        for (int j = i+1; i <=n; j++) {t+=w[i]*r; cr++;}
+
+        if (cl>cr)
+        {
+            t+=(cl-cr)*Ql;
+        }
+        else if (cl < cr)
+        {
+            t+=(cr-cl)*Qr;
+        }
+
+        if (t<sol) sol = t;
+    }
+
+    printf("%d\n", sol);
+
+    return 0;
+}
